@@ -1,3 +1,11 @@
+/*Aplicando estilo por ID*/
+
+#titulodesafio{
+	align-content: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #4F4F4F;
+}
+
 /*/*aplicando estilo genenal*/
 *{
 	margin: 0px;

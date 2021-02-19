@@ -1,0 +1,266 @@
+/*ID para guardar desafio*/
+
+#titulodesafio{
+	align-content: center;
+	font-family: 'Open Sans', sans-serif;
+	color: red;
+}
+
+
+/*/*aplicando estilo genenal*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;	
+/*	font-family: 'Spectral', serif;*/
+}
+
+/*medidas Body*/
+body{
+	width: 100%;
+	height: 2000px;
+	background-color: white;
+	overflow: scroll;
+}
+
+
+/*Aplicando estilo por etiqueta*/
+h1{
+	color:#1a208f;
+}
+
+
+
+li{
+	padding: 10px;
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	/*width: 25%;*/
+}
+
+/*ul ul{
+	position: absolute;
+	display: none;
+}*/
+
+
+
+
+
+/*Aplicando estilo al Header y footer*/
+header{
+	font-family: 'Open Sans', sans-serif;
+	margin: 20px;
+	width: 90%;
+	/*float:;*/
+/*	position: fixed;*/
+/*	height: 500px;*/
+}
+
+	/*prueba de colocar imagenes de fondo en el header*/
+	
+	/*background-image: url("dyc4.jpg");
+	background-repeat: repeat-y;
+	background-position: right;
+	*/
+
+footer{
+		width: 100%;
+		height: 200px;
+
+}	
+
+
+footer ul li{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #4F4F4F;
+	display: block;
+
+}
+
+main{
+	font-family: 'Open Sans', sans-serif;
+	color: #4F4F4F;
+	width: 100%;
+/*	height: 200px;*/
+}
+
+form{
+	font-family: 'Open Sans', sans-serif;
+	color: #4F4F4F;
+	/*padding: 3px;*/
+}
+td{
+	padding: 10px;
+	border-top: #4F4F4F 5px solid;
+	border-left: #1a208f 5px double;
+	border-right:#1a208f 5px double; 
+	border-bottom: #4F4F4F 5px solid;
+}
+
+
+/*Aplicando estilo por Clase*/
+.pendiente{
+	color:red;
+}
+
+
+.configuracionMenu{
+	list-style-type: none;
+	list-style-position: outside;
+	text-align: center;
+	/*float: left;*/
+	display: inline-flex;
+
+}
+.configuracionMenu1{
+	list-style-type: none;
+	list-style-position: outside;
+	text-align: center;
+	/*float: left;*/
+	display: none;
+
+}
+
+ul ul li{
+	display: inline-flex;
+	
+}
+
+ul li:hover ul{
+	display: inline-flex;
+}
+
+.tipografiaTitulos{
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	text-decoration: underline;
+	color:#1a208f;
+
+}
+
+
+.tipografiaSubtitulos{
+	color: #858585;
+	font-size: 30px;
+}
+
+
+.tipografiaMenu{
+	color: #858585;
+	font-size: 20px;
+}
+
+.tipografiaArticulos{
+	font-size: 17px;
+
+}
+
+.tipografiaFormContacto{
+	color:  #858585;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.tipografiaFormContactoSubtitulo{
+	color:  #858585;
+	font-size: 15px;
+	font-weight: bold;
+}
+.tipografiaGenerales{
+	font-family: 'Open Sans', sans-serif;
+	color:  black;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 120px;
+
+
+}
+/*Aplicando estilo por ID*/
+
+#textArea{
+	height: 50px;
+	width: 80%;
+	align-content: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #4F4F4F;
+}
+
+/*p{
+	display: inline;
+}*/
+
+.contenedor{
+	padding: 30px;
+	height: 300px;
+	width: 300px;
+	background-color: pink;
+	font-size: 20px;
+	overflow: hidden;
+	margin: 20px 5px 5px 40%;
+	text-align: center;
+	align-content: left;
+	/*border-color: blue;
+	border-style: double;
+	border-width: 10px;*/
+	border: double 10px red;
+
+}
+
+.contenedor1{
+	background-color: indianred;
+	width: 1200px;
+	height: 700px;
+	/*overflow: hidden;*/
+	margin: 20px 50px 50px 150px;
+	
+
+	/*padding-left: 20px;*/
+}
+
+.hijo1{
+	background-color: orange;
+	width: 400px;
+	height: 300px;
+	float: left;
+
+}
+
+.hijo2{
+	background-color: blue;
+	width: 400px;
+	height: 300px;
+	float: left;
+
+}
+
+.hijo3{
+	background-color: violet;
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.hijo4{
+	background-color: yellow;
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.hijo5{
+	background-color: red;
+	width: 400px;
+	height: 300px;
+	float: left;
+	/*top: 10px;
+	position: sticky; no me funciono*/
+}
+.hijo6{
+	background-color: green;
+	width: 400px;
+	height: 300px;
+	float: left;
+}
