@@ -1,3 +1,9 @@
+/*Variables*/
+@import "variables";
+@import "funciones";
+@import "footer";
+/*podria ocupar con formato grid*/
+
 /*ID para guardar desafio*/
 
 #titulodesafio{
@@ -9,7 +15,7 @@
 
 /*/*aplicando estilo genenal*/
 *{
-	margin: 0px;
+	margin: 0px;	
 	padding: 0px;
 	box-sizing: border-box;	
 /*	font-family: 'Spectral', serif;*/
@@ -26,7 +32,10 @@ body{
 
 /*Aplicando estilo por etiqueta*/
 h1{
-	color:#1a208f;
+	color:$color-principal;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
 }
 
 
@@ -43,9 +52,6 @@ li{
 	position: absolute;
 	display: none;
 }*/
-
-
-
 
 
 /*Aplicando estilo al Header y footer*/
@@ -65,20 +71,6 @@ header{
 	background-position: right;
 	*/
 
-footer{
-		width: 100%;
-		height: 200px;
-
-}	
-
-
-footer ul li{
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	color: #4F4F4F;
-	display: block;
-
-}
 
 main{
 	font-family: 'Open Sans', sans-serif;
@@ -137,20 +129,20 @@ ul li:hover ul{
 	font-weight: bold;
 	font-size: 40px;
 	text-align: left;
-	text-decoration: underline;
-	color:#1a208f;
+	text-decoration: none;
+	color:$color-principal;
 
 }
 
 
 .tipografiaSubtitulos{
-	color: #858585;
+	@extend %fuenteComun;
 	font-size: 30px;
 }
 
 
 .tipografiaMenu{
-	color: #858585;
+	@extend %fuenteComun;
 	font-size: 20px;
 }
 
@@ -160,13 +152,13 @@ ul li:hover ul{
 }
 
 .tipografiaFormContacto{
-	color:  #858585;
+	@extend %fuenteComun;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 .tipografiaFormContactoSubtitulo{
-	color:  #858585;
+	@extend %fuenteComun;
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -194,6 +186,7 @@ ul li:hover ul{
 	display: inline;
 }*/
 
+/*BoxModeling index.html*/
 .contenedor{
 	padding: 30px;
 	height: 300px;
@@ -210,7 +203,7 @@ ul li:hover ul{
 	border: double 10px red;
 
 }
-
+/*BoxModeling empresas.html*/
 .contenedor1{
 	background-color: indianred;
 	width: 1200px;
@@ -222,45 +215,36 @@ ul li:hover ul{
 	/*padding-left: 20px;*/
 }
 
+
+
 .hijo1{
-	background-color: orange;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(Orange);
+	@extend %fuenteComunHijos;
 
 }
 
 .hijo2{
-	background-color: blue;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(white);
+	@extend %fuenteComunHijos;
 
 }
 
 .hijo3{
-	background-color: violet;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(violet);
+	@extend %fuenteComunHijos;
 }
 .hijo4{
-	background-color: yellow;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(yellow);
+	@extend %fuenteComunHijos;
 }
 .hijo5{
-	background-color: red;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(red);
+	@extend %fuenteComunHijos;
 	/*top: 10px;
 	position: sticky; no me funciono*/
 }
 .hijo6{
-	background-color: green;
-	width: 400px;
-	height: 300px;
-	float: left;
+	@include cambiarColorFondo(green);
+	@extend %fuenteComunHijos;
 }
+
