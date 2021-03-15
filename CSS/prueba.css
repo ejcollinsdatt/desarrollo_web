@@ -20,12 +20,14 @@
 /*transformaciones, definine un conjunto de operaciones y al aplicar en elemento especifico se parametriza*/
 footer {
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  display: inline-flex;
+  justify-content: center; }
   footer ul li {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     color: #4F4F4F;
-    display: block; }
+    font-size: 12px; }
 
 /*podria ocupar con formato grid*/
 /*ID para guardar desafio*/
@@ -44,7 +46,7 @@ footer {
 /*medidas Body*/
 body {
   width: 100%;
-  height: 1000px;
+  height: 600px;
   background-color: white;
   overflow: scroll; }
 
@@ -70,11 +72,44 @@ li {
 /*Aplicando estilo al Header y footer*/
 header {
   font-family: 'Open Sans', sans-serif;
-  margin: 20px;
-  width: 90%;
+  /*margin: 10px;*/
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   /*float:;*/
   /*	position: fixed;*/
   /*	height: 500px;*/ }
+
+/*centrar el menu principal*/
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*width: 1000px;*/ }
+
+.contenedorLogo {
+  background-color: white;
+  align-content: left;
+  /*width: 200px;*/
+  display: flex;
+  margin: 10px;
+  /*justify-content: flex-start;*/
+  /*flex-direction: row;*/
+  /*que se ordene alreves row-reverse*/
+  /*flex-wrap: wrap;*/
+  /*nowrap los acomodo y wrap hace salto de linea*/
+  /*justify-content: center;*/
+  /*para alinear el grupo de flexbox: center, flex-start space-between flex-evenly*/
+  /*align-items: center ;*/
+  /*para alinear eje secundario, dejar las cajas al final del contenedor principal: flex-start*/
+  /*overflow: hidden;*/
+  /*margin: 20px 50px 50px 150px;*/
+  /*align-content: space-around;*/
+  /*padding-left: 20px;*/ }
 
 /*prueba de colocar imagenes de fondo en el header*/
 /*background-image: url("dyc4.jpg");
@@ -116,12 +151,13 @@ td {
   list-style-position: outside;
   text-align: center;
   /*float: left;*/
-  display: none; }
+  display: none;
+  font-size: 15px; }
 
 ul ul li {
   display: inline-flex; }
 
-ul li:hover ul {
+div ul li:hover ul {
   display: inline-flex; }
 
 .tipografiaTitulos {
@@ -132,10 +168,10 @@ ul li:hover ul {
   color: #1a208f; }
 
 .tipografiaSubtitulos {
-  font-size: 15px; }
+  font-size: 20px; }
 
 .tipografiaMenu {
-  font-size: 15px; }
+  font-size: 20px; }
 
 .tipografiaArticulos {
   font-size: 15px; }
@@ -210,11 +246,6 @@ main div div {
   /*margin: 20px 50px 50px 150px;*/
   align-content: space-around;
   /*padding-left: 20px;*/ }
-
-/*centrar el menu principal*/
-.centrar {
-  display: flex;
-  justify-content: center; }
 
 .contenedor2 {
   display: flex; }
