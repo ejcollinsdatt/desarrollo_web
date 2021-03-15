@@ -1,14 +1,21 @@
 /*define colores fuente subtitulos y textos*/
 %fuenteComun{
 	color: $color-secundario;
+
 }
 
 /*boxmodeling seguros empresas*/
 /*extend o fuente comun, mismos parametros*/
 %fuenteComunHijos{
-	width: 400px;
+	border: solid 2px White;
+	width: 320px;
+	height: 260px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-weight: bold;
+	/*	width: 400px;
 	height: 300px;
-	float: left;
+	float: left;*/
 }
 /*transformaciones, definine un conjunto de operaciones y al aplicar en elemento especifico se parametriza*/
 @mixin cambiarColorFondo($colorFondo){

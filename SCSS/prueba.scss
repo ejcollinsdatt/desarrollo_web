@@ -24,7 +24,7 @@
 /*medidas Body*/
 body{
 	width: 100%;
-	height: 2000px;
+	height: 1000px;
 	background-color: white;
 	overflow: scroll;
 }
@@ -39,12 +39,12 @@ h1{
 }
 
 
-
+/*configuracion Menus*/
 li{
-	padding: 10px;
+	padding: 8px;
 	display: inline-block;
 	position: relative;
-	font-size: 20px;
+	/*font-size: 30px;*/
 	/*width: 25%;*/
 }
 
@@ -73,6 +73,7 @@ header{
 
 
 main{
+	margin: 20px;
 	font-family: 'Open Sans', sans-serif;
 	color: #4F4F4F;
 	width: 100%;
@@ -127,7 +128,7 @@ ul li:hover ul{
 
 .tipografiaTitulos{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 25px;
 	text-align: left;
 	text-decoration: none;
 	color:$color-principal;
@@ -135,19 +136,21 @@ ul li:hover ul{
 }
 
 
+
+
 .tipografiaSubtitulos{
 	@extend %fuenteComun;
-	font-size: 30px;
+	font-size: 15px;
 }
 
 
 .tipografiaMenu{
 	@extend %fuenteComun;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .tipografiaArticulos{
-	font-size: 17px;
+	font-size: 15px;
 
 }
 
@@ -164,11 +167,11 @@ ul li:hover ul{
 }
 .tipografiaGenerales{
 	font-family: 'Open Sans', sans-serif;
-	color:  black;
+	/*color:  black;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 120px;
+	padding-top: 120px;*/
 
 
 }
@@ -192,7 +195,7 @@ ul li:hover ul{
 	height: 300px;
 	width: 300px;
 	background-color: pink;
-	font-size: 20px;
+	font-size: 15px;
 	overflow: hidden;
 	margin: 20px 5px 5px 40%;
 	text-align: center;
@@ -204,21 +207,47 @@ ul li:hover ul{
 
 }
 /*BoxModeling empresas.html*/
-.contenedor1{
-	background-color: indianred;
-	width: 1200px;
-	height: 700px;
-	/*overflow: hidden;*/
-	margin: 20px 50px 50px 150px;
-	
+/*flexbox*/
 
+main div{
+	margin-left: 200px;	
+	padding: 0px;
+}
+
+main div div{
+	margin: 0px;	
+	padding: 0px;
+}
+
+.contenedor1{
+	background-color: white;
+	width: 1000px;
+	height: 600px;
+	display: flex;
+	flex-direction: row; /*que se ordene alreves row-reverse*/
+	flex-wrap: wrap; /*nowrap los acomodo y wrap hace salto de linea*/
+	justify-content: center; /*para alinear el grupo de flexbox: center, flex-start space-between flex-evenly*/
+	/*align-items: center ;*//*para alinear eje secundario, dejar las cajas al final del contenedor principal: flex-start*/
+	/*overflow: hidden;*/
+	/*margin: 20px 50px 50px 150px;*/
+	align-content: space-around;
+	
 	/*padding-left: 20px;*/
+}
+/*centrar el menu principal*/
+.centrar{
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor2{
+	display: flex;
 }
 
 
 
 .hijo1{
-	@include cambiarColorFondo(Orange);
+	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
 
 }
@@ -226,25 +255,26 @@ ul li:hover ul{
 .hijo2{
 	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
+	order: 1;
 
 }
 
 .hijo3{
-	@include cambiarColorFondo(violet);
+	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
 }
 .hijo4{
-	@include cambiarColorFondo(yellow);
+	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
 }
 .hijo5{
-	@include cambiarColorFondo(red);
+	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
 	/*top: 10px;
 	position: sticky; no me funciono*/
 }
 .hijo6{
-	@include cambiarColorFondo(green);
+	@include cambiarColorFondo(white);
 	@extend %fuenteComunHijos;
 }
 

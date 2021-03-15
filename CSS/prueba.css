@@ -7,9 +7,15 @@
 /*boxmodeling seguros empresas*/
 /*extend o fuente comun, mismos parametros*/
 .hijo1, .hijo2, .hijo3, .hijo4, .hijo5, .hijo6 {
-  width: 400px;
-  height: 300px;
-  float: left; }
+  border: solid 2px White;
+  width: 320px;
+  height: 260px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  /*	width: 400px;
+	height: 300px;
+	float: left;*/ }
 
 /*transformaciones, definine un conjunto de operaciones y al aplicar en elemento especifico se parametriza*/
 footer {
@@ -38,7 +44,7 @@ footer {
 /*medidas Body*/
 body {
   width: 100%;
-  height: 2000px;
+  height: 1000px;
   background-color: white;
   overflow: scroll; }
 
@@ -49,11 +55,12 @@ h1 {
   font-weight: bold;
   font-family: arial; }
 
+/*configuracion Menus*/
 li {
-  padding: 10px;
+  padding: 8px;
   display: inline-block;
   position: relative;
-  font-size: 20px;
+  /*font-size: 30px;*/
   /*width: 25%;*/ }
 
 /*ul ul{
@@ -75,6 +82,7 @@ header {
 	background-position: right;
 	*/
 main {
+  margin: 20px;
   font-family: 'Open Sans', sans-serif;
   color: #4F4F4F;
   width: 100%;
@@ -118,19 +126,19 @@ ul li:hover ul {
 
 .tipografiaTitulos {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 25px;
   text-align: left;
   text-decoration: none;
   color: #1a208f; }
 
 .tipografiaSubtitulos {
-  font-size: 30px; }
+  font-size: 15px; }
 
 .tipografiaMenu {
-  font-size: 20px; }
+  font-size: 15px; }
 
 .tipografiaArticulos {
-  font-size: 17px; }
+  font-size: 15px; }
 
 .tipografiaFormContacto {
   font-size: 18px;
@@ -142,11 +150,11 @@ ul li:hover ul {
 
 .tipografiaGenerales {
   font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 120px; }
+  /*color:  black;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 120px;*/ }
 
 /*Aplicando estilo por ID*/
 #textArea {
@@ -165,7 +173,7 @@ ul li:hover ul {
   height: 300px;
   width: 300px;
   background-color: pink;
-  font-size: 20px;
+  font-size: 15px;
   overflow: hidden;
   margin: 20px 5px 5px 40%;
   text-align: center;
@@ -176,30 +184,58 @@ ul li:hover ul {
   border: double 10px red; }
 
 /*BoxModeling empresas.html*/
+/*flexbox*/
+main div {
+  margin-left: 200px;
+  padding: 0px; }
+
+main div div {
+  margin: 0px;
+  padding: 0px; }
+
 .contenedor1 {
-  background-color: indianred;
-  width: 1200px;
-  height: 700px;
+  background-color: white;
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  /*que se ordene alreves row-reverse*/
+  flex-wrap: wrap;
+  /*nowrap los acomodo y wrap hace salto de linea*/
+  justify-content: center;
+  /*para alinear el grupo de flexbox: center, flex-start space-between flex-evenly*/
+  /*align-items: center ;*/
+  /*para alinear eje secundario, dejar las cajas al final del contenedor principal: flex-start*/
   /*overflow: hidden;*/
-  margin: 20px 50px 50px 150px;
+  /*margin: 20px 50px 50px 150px;*/
+  align-content: space-around;
   /*padding-left: 20px;*/ }
 
-.hijo1 {
-  background-color: Orange; }
+/*centrar el menu principal*/
+.centrar {
+  display: flex;
+  justify-content: center; }
 
-.hijo2 {
+.contenedor2 {
+  display: flex; }
+
+.hijo1 {
   background-color: white; }
 
+.hijo2 {
+  background-color: white;
+  order: 1; }
+
 .hijo3 {
-  background-color: violet; }
+  background-color: white; }
 
 .hijo4 {
-  background-color: yellow; }
+  background-color: white; }
 
 .hijo5 {
-  background-color: red;
+  background-color: white;
   /*top: 10px;
 	position: sticky; no me funciono*/ }
 
 .hijo6 {
-  background-color: green; }
+  background-color: white; }
