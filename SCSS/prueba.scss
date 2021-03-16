@@ -108,7 +108,7 @@ header{
 
 
 main{
-	margin: 20px;
+	margin: 10px;
 	font-family: 'Open Sans', sans-serif;
 	color: #4F4F4F;
 	width: 100%;
@@ -312,3 +312,38 @@ main div div{
 	@extend %fuenteComunHijos;
 }
 
+main .contenedorVida{
+	margin: 0px;	
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+
+	background-image: linear-gradient(to top, greenyellow, LightSteelBlue);
+	display: grid;
+	grid-template-rows: 400px;
+	grid-template-columns: 100% 100% 100%;
+	position: relative;
+
+	animation: animacion 15s infinite;
+	img{
+	width: 100%;
+	height: 100%;
+}
+
+}
+
+@keyframes animacion{
+	from{
+			right: 0%;
+	}
+	50%{
+			right: 100%;
+	}
+	to{
+			right: 200%;
+	}
+}
+
+.contenedorVida:hover{
+	animation-play-state: paused;
+}
